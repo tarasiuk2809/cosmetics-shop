@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 20px 160px;
+    background-color: #EAE7DC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav li:first-child::after {
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #8E8D8A;
+    margin-left: 15px;
+}
+
+.logo {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #8E8D8A;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #6E6658;
+    font-weight: 600;
+}
+
+#filter {
+    padding: 20px 160px;
+
+}
+
+#shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 160px;
+}
+
+.shop-item {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.shop-item:not(:nth-child(3n+3)) {
+    margin-right: 20px;
+}
+
+select:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.shop-item img {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 3;
+    object-fit: cover;
+}
+
+.shop-item .price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.shop-item .tags {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.shop-item .tag {
+    background: #99CED3;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+footer {
+    background-color: #EAE7DC;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #8E8D8A;
+    padding: 50px 0;
+}
+
+.contact-item {
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    font-weight: 300;
+}
+
+#nothing-found {
+    color: #8E8D8A;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  

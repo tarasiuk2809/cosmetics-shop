@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/495bebfb60.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,700;9..40,1000&family=Manrope:wght@200;300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,700;9..40,1000&family=Kanit:wght@600&family=Manrope:wght@200;300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин уходовой косметики</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">armor.cosmetics</a>
+        <nav>
+            <ul class="container nav">
+                <li>
+                    <a href="#shop-items">Каталог</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+                <li>
+                    <div class="site-search">
+                        <input type="search" id="search-input">
+                        <button type="button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="filter">
+            <label for="category-filtering">Выбор категории</label>
+            <select name="category-filtering" id="category-filtering">
+                <option value="hair">Для волос</option>
+                <option value="body">Для тела</option>
+                <option value="face">Для лица</option>
+                <option value="" selected="selected" disabled>-- Выберите категорию товара--</option>
+            </select>
+            <label for="filtering">Фильтр</label>
+            <select name="filtering" id="filtering">
+                <option value="expensive">Сначала дорогие</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="alphabet">По алфавиту</option>
+                <option value="new">Новинки</option>
+                <option selected="selected" value="" disabled>-- Выберите фильтр--</option>
+            </select>
+        </section>
+        <section id="shop-items">
+        </section>
+        <p id="nothing-found"></p>
+    </main>
+    <footer id="contacts" class="container">
+        <a href="#" class="footer-logo">armor.cosmetics</a>
+        <ul class="contact-info" id="contacts">
+            <li class="contact-item"><a href="tel:+11234567890 ">+1 123 456 78 90 </a></li>
+            <li class="contact-item"><a href="mailto:armor@gmail.com">armor@gmail.com</a></li>
+            <li class="contact-item"><a href="https://yandex.by/maps/-/CDB0mVjL">Гоголя 66, Брест</a></li>
+        </ul>
+    </footer>
+    <template id="item-template">
+        <div class="shop-item">
+            <img src="">
+            <div class="content">
+                <div class="tags"></div>
+                <h1></h1>
+                <p></p>
+                <span class="price"></span>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
